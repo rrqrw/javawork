@@ -1,0 +1,5 @@
+package inheritance.aiplane;
+
+public class SuperSoniAirPlane {
+
+}

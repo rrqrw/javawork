@@ -1,0 +1,25 @@
+package reference.subjects;
+
+public class Student {
+	//필드
+	int studentId;   // 학번
+	String studentName; // 이름
+	Subject korean; // 국어 과목(참조)
+	
+	// 생성자 
+	public Student(int studentId,String studentName) {
+		this.studentId =studentId;
+		this.studentName = studentName;
+		korean= new Subject();
+	}
+	// 국어 과목 추가 메서드 정의
+	public void koreanSubject(String name, int score) {
+		korean.setSubjectName(name);
+		korean.setScorePoint(score);
+	}
+	
+	public void showStudentInfo() {
+		System.out.println(studentName + "의" + korean.getSubjectName() +"점수는 "+ 
+	                        korean.getScorePoint()+ "입니다.");
+	}
+}

@@ -1,0 +1,15 @@
+package inheritance.aiplane;
+
+public class SuperSonicAirPlane  extends AirPlane{
+	// 1-일반비행, 2-초음속 비행 
+	int flyMode = 1 ;
+	
+	public void 비행하다() {
+		if(flyMode == 2) {
+			System.out.println("비행기가 초음속 비행합니다.");
+		}else {
+			System.out.println("비행기가 일반 비행합니다.");
+		}
+	}
+
+}

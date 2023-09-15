@@ -1,0 +1,6 @@
+package inheritance.person;
+
+public class Engineer extends Person{
+	
+
+}

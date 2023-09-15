@@ -1,0 +1,11 @@
+package basicclass;
+
+public class Book {
+	String bookNumber; // 책 번호
+	String bookTitle; // 책 제목 
+
+	Book(int bookNumber, String bookTitle){
+		this.bookNumber = bookNumber;
+		this.bookTitle = bookTitle;
+	}
+}
