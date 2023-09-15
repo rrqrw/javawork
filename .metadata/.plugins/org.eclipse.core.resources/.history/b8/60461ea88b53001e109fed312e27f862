@@ -1,0 +1,12 @@
+package singleton;
+
+public class CompanyTest {
+
+	public static void main(String[] args) {
+		
+		Company company = Company.getInstance();
+		System.out.println(company);
+
+	}
+
+}
