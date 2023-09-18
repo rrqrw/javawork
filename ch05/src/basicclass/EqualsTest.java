@@ -21,7 +21,11 @@ public class EqualsTest {
 		
 		System.out.println(book1 == book2); // 주소  - false
 		System.out.println(book1.equals(book2)); // 문자열 비교 - false 
+	//book 인스턴스의 물리적 주소 
+		System.out.println(System.identityHashCode(book1));
+		System.out.println(System.identityHashCode(book2));
 		
+		//논리적 주소 일치 시킴 - hasCode(): object 클래스가 제공 
 	}
 
 

@@ -56,7 +56,7 @@ public class AnimalTest {
 		
 		
 		// moveAnimal() 호출
-		aTest.moveAnimal(human);
+		aTest.moveAnimal(human); 
 		aTest.moveAnimal(eagle);
 		aTest.moveAnimal(tiger);
 		
