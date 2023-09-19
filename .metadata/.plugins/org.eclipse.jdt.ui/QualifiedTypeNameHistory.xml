@@ -15,7 +15,6 @@
     <fullyQualifiedTypeName name="inheritance.aiplane.SuperSonicAirPlane"/>
     <fullyQualifiedTypeName name="protectedex.pack1.A"/>
     <fullyQualifiedTypeName name="customers.Customer"/>
-    <fullyQualifiedTypeName name="customers.VIPCustomer"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="kr.or.iei.model.User1"/>
     <fullyQualifiedTypeName name="kr.or.iei.model.User"/>
@@ -23,4 +22,8 @@
     <fullyQualifiedTypeName name="java.util.Calendar"/>
     <fullyQualifiedTypeName name="java.time.temporal.ChronoUnit"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="polymorphism.animals.AnimalTest"/>
+    <fullyQualifiedTypeName name="customers.GoldCustomer"/>
+    <fullyQualifiedTypeName name="customers.VIPCustomer"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
