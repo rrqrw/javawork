@@ -1,5 +1,5 @@
 package interfaceex.remocon;
-
+// ReoteConterol 인터페이스를 구현한  Television 클래스
 public class Television implements RemoteControl{
    //필드
 	public int volume;

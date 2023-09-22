@@ -25,5 +25,7 @@ public interface RemoteControl {
 			System.out.println("무음 해체합니다.");
 		}
 	}
+
+	
 	
 }

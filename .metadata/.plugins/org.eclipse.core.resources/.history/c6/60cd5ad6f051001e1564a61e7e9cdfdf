@@ -1,9 +1,0 @@
-package customers;
-
-public class VIPCustomer extends Customer{
-      private int agentId;  // 전문 상담원
-      
-      public VIPCustomer() {
-    	  
-      }
-}

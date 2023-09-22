@@ -1,9 +1,9 @@
 package overriding.shop;
 
 public class Shop1 extends HeadShop{
-	
+   
 	public Shop1() {
-		System.out.println("*****역세권 매장입니다.*******");
+		System.out.println("*** 역세권 매장입니다 ***");
 	}
 
 	@Override
@@ -20,6 +20,4 @@ public class Shop1 extends HeadShop{
 	public void 비빔밥() {
 		System.out.println("비빔밥: 8,500원");
 	}
-	
-
 }

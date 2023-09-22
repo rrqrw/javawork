@@ -20,6 +20,7 @@ public class BankMain {
 		boolean sw = true;
 		
 		while(sw) {
+			try {
 			System.out.println("==========================================");
 			System.out.println("1.계좌생성 | 2.계좌목록 | 3.예금 | 4.출금 | 5.종료");
 			System.out.println("==========================================");
@@ -41,14 +42,18 @@ public class BankMain {
 			}else {
 				System.out.println("지원되지 않는 기능입니다. 다시 입력해 주세요");
 			}
+			}catch(NumberFormatException e) {
+				//e.printStackTrace();
+				System.out.println("올바른 숫자를 입력해주세요.");
+			}
 			
 		}//while 끝
 		System.out.println("프로그램을 종료합니다.");
 		scanner.close();
 
+	
 	}
-	
-	
+
 	//계좌 생성
 	private static void createAccount() {
 		System.out.println("----------------------------------");

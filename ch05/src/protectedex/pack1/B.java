@@ -4,9 +4,7 @@ public class B {
 
 	public void method() {
 		A a = new A();
-		a.fleld = "yes";
-		a.method(); 
-			
-		
+		a.field = "yes";
+		a.method();
 	}
 }
