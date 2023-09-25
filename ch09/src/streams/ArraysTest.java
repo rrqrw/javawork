@@ -6,7 +6,9 @@ import java.util.Collections;
 public class ArraysTest {
 
 	public static void main(String[] args) {
+		//Stream 인터페이스 - 배열을 쉽고 효율적으로 처리하는 기능 
 		Integer[] num1 = {3, 1, 2, 4, 5};
+		//int[] num1= {3, 1, 2, 4, 5};
 		
 		
 		

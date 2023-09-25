@@ -19,8 +19,8 @@ public class StreamTest1 {
 		comStream.forEach(com -> System.out.println(com)); // 람다식으로 출력 
 		
 		//for() , forEach() - 객체를 각각 출력
+			
 		
-	
 	
 	}
 

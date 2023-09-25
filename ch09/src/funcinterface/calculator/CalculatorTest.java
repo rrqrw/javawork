@@ -28,6 +28,7 @@ public class CalculatorTest {
 		div = (n1, n2) -> num1/num2;
 		//호출
 		System.out.println(div.calculate(num1, num2));
+		
 	}
 
 }
