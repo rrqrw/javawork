@@ -18,6 +18,7 @@ public class WriteExample1 {
 			byte b = 20;
 			byte c = 30;
 			
+			
 			//db 파일에 데이터 쓰기
 			os.write(a);
 			os.write(b);
