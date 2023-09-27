@@ -21,7 +21,7 @@ public class PatternExample {
 		}
 		 
 		//계좌 번호
-		regExp = "\\d{2}-\\d{3,4}";
+		regExp = "\\d{2}-\\d{2}-\\d{3}";
 		String account = "aa-1234";
 		result = Pattern.matches(regExp, account);
 		
