@@ -14,6 +14,7 @@ public class StringMethos {
 		// 주민번호로 성별 구분
 		String 주민번호 = "950815-2345678";
 		char 성별 = 주민번호.charAt(7);
+		
 		switch(성별) {
 		case '1': case '3':
 			System.out.println("남자입니다.");

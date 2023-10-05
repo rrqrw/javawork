@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class ServerSample {
 
 	
-	
+	//TCP 
 	private static ServerSocket serverSocket;
 	
 	public static void main(String[] args) {
