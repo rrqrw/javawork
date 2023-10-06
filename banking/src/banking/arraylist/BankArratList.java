@@ -17,7 +17,7 @@ boolean sw = true;
 		
 		while(sw) {
 			System.out.println("====================================================");
-			System.out.println("1.계좌생성 | 2.계좌목록 | 3.예금 | 4.출금 | 5.계좌삭제| 6.종료");
+			System.out.println("1.계좌생성 | 2.계좌목록 | 3.예금 | 4.출금 | 5.계좌삭제| 6.계좌검색| 7.종료");
 			System.out.println("=====================================================");
 			System.out.print("선택>");
 			
@@ -32,8 +32,10 @@ boolean sw = true;
 			}else if (selectNo ==4 ) {
 				withdraw() ; //출금
 			}else if (selectNo ==5 ) {
-					//removeAccount() ; //계좌삭제
+					removeAccount() ; //계좌삭제
 			}else if (selectNo ==6 ) {
+				selectAccount();
+			}else if (selectNo ==7 ) {
 				sw= false; // 종료
 				
 			}else {
@@ -162,14 +164,61 @@ boolean sw = true;
 			System.out.println("----------------------------------");
 			System.out.println("계좌 삭제");
 			System.out.println("----------------------------------");
+			
+			
+			while(true) {
+				System.out.print("계좌 번호: ");
+				
+				String ano = scanner.nextLine();
+				if(findAccount(ano) != null) {
+					for(int i=0; i<accountList.size(); i++) {
+						String dbAno = accountList.get(i).getAno();
+						if(dbAno.equals(ano)) {
+							accountList.remove(i);
+							System.out.println("결과: 계좌가 삭제 되었습니다.");
+						break;
+						}
+					}
+					break;
+				}else {
+					System.out.println("계좌 번호 형식이 아닙니다. 다시입력해주세요 형식(00-00-000");
+				}
+					
+			}
+		
+		}
+		// 특정 계좌검색
+		private static void  selectAccount() {
+			System.out.println("----------------------------------");
+			System.out.println("계좌 검색");
+			System.out.println("----------------------------------");
 			System.out.print("계좌 번호: ");
+
+			while(true) {
+				System.out.print("계좌 번호: ");
+				
+				String ano = scanner.nextLine();
+				if(findAccount(ano) != null) {
+					for(int i=0; i<accountList.size(); i++) {
+						String dbAno = accountList.get(i).getAno();
+						if(dbAno.equals(ano)) {
+							Account account = accountList.get(i);
+							System.out.println("결과: 계좌가 검색 되었습니다.");
+							System.out.print("계좌번호: " + account.getAno() + "\t");
+							System.out.print("계좌주: " + account.getOwner()+ "\t");
+							System.out.println("잔고: " + account.getBalance());
+							
+						break;
+						}
+					}
+					break;
+				}else {
+					System.out.println("없는 계좌입니다.");
+				}
+					
+			}
 			
-			String remove =scanner.nextLine();
 			
-			
-			
-		
-		
 		}
 	private static Account findAccount(String ano) {
 		Account account = null;
